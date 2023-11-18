@@ -45,7 +45,7 @@ class Pengaduan(models.Model):
     status = fields.Selection(selection = [
         ('0', "Aktif"), ('1', 'Tidak Aktif')
     ])
-    type = fields.Many2one('disepeng.pelapor', string="Pelapor")
+    pelapor_id = fields.Many2one('disepeng.pelapor', string="Pelapor")
     diskusi_ids = fields.One2many('disepeng.diskusi', 'pengaduan_id', string="Diskusi Terkait")
 
 class Percakapan(models.Model):

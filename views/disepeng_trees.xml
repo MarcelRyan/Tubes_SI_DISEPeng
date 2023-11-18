@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="disepeng_pengaduan_tree" model="ir.ui.view">
+        <field name="name">disepeng.pengaduan.tree</field>
+        <field name="model">disepeng.pengaduan</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="judul"/>
+                <field name="deskripsi"/>
+                <field name="alamatProduk"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="disepeng_pelapor_tree" model="ir.ui.view">
+        <field name="name">disepeng.pelapor.tree</field>
+        <field name="model">disepeng.pelapor</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="namaLengkap"/>
+                <field name="nomorTelp"/>
+                <field name="email"/>
+                <field name="alamat"/>
+                <field name="gender"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_list_pengaduan" model="ir.actions.act_window">
+        <field name="name">Daftar Kasus</field>
+        <field name="res_model">disepeng.pengaduan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_list_pelapor" model="ir.actions.act_window">
+        <field name="name">Daftar Pelapor</field>
+        <field name="res_model">disepeng.pelapor</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="disepeng_root_menu" 
+        name="DISEPeng"
+        sequence="1"/>
+
+    <menuitem
+        id="disepeng_kasus_menu"
+        name="Daftar Kasus"
+        parent="disepeng_root_menu"
+        action="action_list_pengaduan"
+        sequence="1"/>
+    
+    <menuitem
+        id="disepeng_pelapor_menu"
+        name="Daftar Pelapor"
+        parent="disepeng_root_menu"
+        action="action_list_pelapor"
+        sequence="2"/>
+</odoo>
