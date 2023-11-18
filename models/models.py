@@ -22,7 +22,7 @@ class Pengaduan(models.Model):
     alamatProduk = fields.Char(string="Alamat Produk", required=True)
     status = fields.Selection(selection = [
         ('0', "Aktif"), ('1', 'Tidak Aktif')
-    ])
+    ], required=True)
     namaPelapor = fields.Char(string = "Nama Pelapor", required=True)
     emailPelapor = fields.Char(string="Email Pelapor", required=True)
     nomorPelapor = fields.Char(string="Nomor Pelapor", required=True)
