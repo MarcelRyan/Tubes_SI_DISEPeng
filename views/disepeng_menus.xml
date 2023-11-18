@@ -12,6 +12,12 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="action_list_pegawai" model="ir.actions.act_window">
+        <field name="name">Daftar Pegawai</field>
+        <field name="res_model">disepeng.pegawai</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <menuitem id="disepeng_root_menu" 
         name="DISEPeng"
         sequence="1"/>
@@ -28,5 +34,12 @@
         name="Daftar Pelapor"
         parent="disepeng_root_menu"
         action="action_list_pelapor"
+        sequence="2"/>
+    
+    <menuitem
+        id="disepeng_pegawai_menu"
+        name="Daftar Pegawai"
+        parent="disepeng_root_menu"
+        action="action_list_pegawai"
         sequence="2"/>
 </odoo>
