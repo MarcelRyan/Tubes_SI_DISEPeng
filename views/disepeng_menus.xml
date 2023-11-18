@@ -29,4 +29,11 @@
         parent="disepeng_root_menu"
         action="action_list_pegawai"
         sequence="2"/>
+    
+    <menuitem
+        id="diskusi_menu"
+        name="Diskusi"
+        parent="disepeng_root_menu"
+        action="mail.action_discuss"
+        sequence="3"/>
 </odoo>
