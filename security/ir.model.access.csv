@@ -1,4 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 disepeng_helpdesk,Helpdesk,model_disepeng_pengaduan,,1,1,1,1
-disepeng_pelapor_helpdesk,Helpdesk,model_disepeng_pelapor,,1,1,1,1
 disepeng_kepala_balai,Kepala Balai,model_disepeng_pegawai,,1,1,1,1

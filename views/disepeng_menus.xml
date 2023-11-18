@@ -6,12 +6,6 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <record id="action_list_pelapor" model="ir.actions.act_window">
-        <field name="name">Daftar Pelapor</field>
-        <field name="res_model">disepeng.pelapor</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
     <record id="action_list_pegawai" model="ir.actions.act_window">
         <field name="name">Daftar Pegawai</field>
         <field name="res_model">disepeng.pegawai</field>
@@ -28,13 +22,6 @@
         parent="disepeng_root_menu"
         action="action_list_pengaduan"
         sequence="1"/>
-    
-    <menuitem
-        id="disepeng_pelapor_menu"
-        name="Daftar Pelapor"
-        parent="disepeng_root_menu"
-        action="action_list_pelapor"
-        sequence="2"/>
     
     <menuitem
         id="disepeng_pegawai_menu"

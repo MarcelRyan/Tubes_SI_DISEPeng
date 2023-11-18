@@ -1,18 +1,5 @@
 from odoo import api, models, fields
 
-class Pelapor(models.Model):
-    _name = 'disepeng.pelapor'
-    _description = 'Data Pelapor Kasus'
-
-    namaLengkap = fields.Char(string='Nama Lengkap', required=True)
-    alamat = fields.Text(string='Alamat', required=True)
-    nomorTelp = fields.Char(string='Nomor Telepon', required=True)
-    email = fields.Char(string='Email', required=True)
-    gender = fields.Selection(selection = [
-        ('0', "Laki-laki"), ("1", "Perempuan")
-    ])
-
-
 class Pegawai(models.Model):
     _name = 'disepeng.pegawai'
     _description = 'Data Pegawai BPOM Makassar'
@@ -45,7 +32,10 @@ class Pengaduan(models.Model):
     status = fields.Selection(selection = [
         ('0', "Aktif"), ('1', 'Tidak Aktif')
     ])
-    pelapor_id = fields.Many2one('disepeng.pelapor', string="Pelapor")
+    namaPelapor = fields.Char(string = "Nama Pelapor", required=True)
+    emailPelapor = fields.Char(string="Email Pelapor", required=True)
+    nomorPelapor = fields.Char(string="Nomor Pelapor", required=True)
+    
     diskusi_ids = fields.One2many('disepeng.diskusi', 'pengaduan_id', string="Diskusi Terkait")
 
 class Percakapan(models.Model):
