@@ -23,6 +23,20 @@
         </field>
     </record>
 
+    <record id="disepeng_pengaduan_form_search" model="ir.ui.view">
+        <field name="name">disepeng.pengaduan.form.search</field>
+        <field name="model">disepeng.pengaduan</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <search>
+                <field name="judul" string="Judul" filter_domain="[('judul', 'ilike', self)]"/>
+                <field name="deskripsi" string="Deskripsi" filter_domain="[('deskripsi', 'ilike', self)]"/>
+                <field name="alamatProduk" string="Alamat Produk" filter_domain="[('alamatProduk', 'ilike', self)]"/>
+                <field name="status" string="Status" filter_domain="[('status', 'ilike', self)]"/>
+                <field name="namaPelapor" string="Nama Pelapor" filter_domain="[('namaPelapor', 'ilike', self)]"/>
+            </search>
+        </field>
+    </record>
 
     <record id="disepeng_pegawai_form" model="ir.ui.view">
         <field name="name">disepeng.pegawai.form</field>
