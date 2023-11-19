@@ -28,7 +28,8 @@
         <field name="priority" eval="1"/>
         <field name="arch" type="xml">
             <search>
-                <field name="judul" string="Search" filter_domain="['|', ('judul', 'ilike', self), ('deskripsi', 'ilike', self)]"/>
+                <field name="judul" string="Judul" filter_domain="[('judul', 'ilike', self)]"/>
+                <field name="deskripsi" string="Deskripsi" filter_domain="[('deskripsi', 'ilike', self)]"/>
             </search>
         </field>
     </record>
