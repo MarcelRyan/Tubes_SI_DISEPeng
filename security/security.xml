@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="base.module_category_disepeng" model="ir.module.category">
+    <field name="description">Role untuk sistem informasi DISEPeng.</field>
+    <field name="sequence">9</field>
+  </record>
+
+  <record id="group_disepeng_admin" model="res.groups">
+    <field name="name">Adminstrator</field>
+    <field name="category_id" ref="base.module_category_disepeng" />
+    <field name="implied_ids"
+      eval="[(6, 0, [ref('base.group_private_addresses'), ref('base.group_user')])]" />
+    <field name="comment">Admin dapat membuat user baru.</field>
+  </record>
+
+  <record id="group_disepeng_helpdesk" model="res.groups">
+    <field name="name">Helpdesk</field>
+    <field name="category_id" ref="base.module_category_disepeng" />
+    <field name="implied_ids"
+      eval="[(6, 0, [ref('base.group_private_addresses'), ref('base.group_user')])]" />
+    <field name="comment">Helpdesk dapat menambahkan kasus baru.</field>
+  </record>
+
+  <record id="group_disepeng_unit_tugas" model="res.groups">
+    <field name="name">Unit Tugas</field>
+    <field name="category_id" ref="base.module_category_disepeng" />
+    <field name="implied_ids"
+      eval="[(6, 0, [ref('base.group_private_addresses'), ref('base.group_user')])]" />
+    <field name="comment">Unit tugas dapat mengakses kasus yang ditanganinya.</field>
+  </record>
+
+  <record id="group_disepeng_kepala_balai" model="res.groups">
+    <field name="name">Kepala Balai</field>
+    <field name="category_id" ref="base.module_category_disepeng" />
+    <field name="implied_ids"
+      eval="[(6, 0, [ref('base.group_private_addresses'), ref('base.group_user')])]" />
+    <field name="comment">Kepala balai dapat menugaskan unit tugas ke sebuah kasus.</field>
+  </record>
+</odoo>
