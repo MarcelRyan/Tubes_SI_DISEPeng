@@ -4,18 +4,19 @@
     <record id="disepeng_pengaduan_form" model="ir.ui.view">
         <field name="name">disepeng.pengaduan.form</field>
         <field name="model">disepeng.pengaduan</field>
-        <field name="priority" eval="1"/>
+        <field name="priority" eval="1" />
         <field name="arch" type="xml">
             <form>
                 <sheet>
                     <group>
-                        <field name="judul"/>
-                        <field name="deskripsi"/>
-                        <field name="alamatProduk"/>
-                        <field name="status"/>
-                        <field name="namaPelapor"/>
-                        <field name="emailPelapor"/>
-                        <field name="nomorPelapor"/>
+                        <field name="judul" />
+                        <field name="deskripsi" />
+                        <field name="alamatProduk" />
+                        <field name="status" />
+                        <field name="namaPelapor" />
+                        <field name="emailPelapor" />
+                        <field name="nomorPelapor" />
+                        <field name="pegawai" />
                     </group>
                 </sheet>
             </form>
@@ -26,16 +27,16 @@
     <record id="disepeng_pegawai_form" model="ir.ui.view">
         <field name="name">disepeng.pegawai.form</field>
         <field name="model">disepeng.pegawai</field>
-        <field name="priority" eval="1"/>
+        <field name="priority" eval="1" />
         <field name="arch" type="xml">
             <form>
                 <sheet>
                     <group>
-                        <field name="namaLengkap"/>
-                        <field name="nomorTelp"/>
-                        <field name="email"/>
-                        <field name="peran"/>
-                        <field name="isAdmin"/>
+                        <field name="namaLengkap" />
+                        <field name="nomorTelp" />
+                        <field name="email" />
+                        <field name="peran" />
+                        <field name="isAdmin" />
                     </group>
                 </sheet>
             </form>

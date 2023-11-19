@@ -1,13 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 group_helpdesk_akses_pengaduan,Akses Helpesk Data Pengaduan,model_disepeng_pengaduan,group_disepeng_helpdesk,1,1,1,0
-group_helpdesk_akses_pelapor,Akses Helpesk Data Pelapor,model_disepeng_pelapor,group_disepeng_helpdesk,1,1,1,0
 group_helpdesk_akses_pegawai,Akses Helpesk Data Pegawai,model_disepeng_pegawai,group_disepeng_helpdesk,0,0,0,0
 group_admin_akses_pengaduan,Akses Admin Data Pengaduan,model_disepeng_pengaduan,group_disepeng_admin,0,0,0,0
-group_admin_akses_pelapor,Akses Admin Data Pelapor,model_disepeng_pelapor,group_disepeng_admin,0,0,0,0
 group_admin_akses_pegawai,Akses Admin Data Pegawai,model_disepeng_pegawai,group_disepeng_admin,1,1,1,1
-group_unit_tugas_akses_pengaduan,Akses Unit Tugas Data Pengaduan,model_disepeng_pengaduan,group_disepeng_unit_tugas,1,1,1,0
-group_unit_tugas_akses_pelapor,Akses Unit Tugas Data Pelapor,model_disepeng_pelapor,group_disepeng_unit_tugas,1,0,0,0
-group_unit_tugas_akses_pegawai,Akses Unit Tugas Data Pegawai,model_disepeng_pegawai,group_disepeng_unit_tugas,1,0,0,0
-group_kepala_balai_akses_pengaduan,Akses Kepala Balai Data Pengaduan,model_disepeng_pengaduan,group_disepeng_kepala_balai,1,1,1,1
-group_kepala_balai_akses_pelapor,Akses Kepala Balai Data Pelapor,model_disepeng_pelapor,group_disepeng_kepala_balai,1,0,0,0
+group_unit_tugas_akses_pengaduan,Akses Unit Tugas Data Pengaduan,model_disepeng_pengaduan,group_disepeng_unit_tugas,1,0,0,0
+group_unit_tugas_akses_pegawai,Akses Unit Tugas Data Pegawai,model_disepeng_pegawai,group_disepeng_unit_tugas,0,0,0,0
+group_kepala_balai_akses_pengaduan,Akses Kepala Balai Data Pengaduan,model_disepeng_pengaduan,group_disepeng_kepala_balai,1,1,0,1
 group_kepala_balai_akses_pegawai,Akses Kepala Balai Data Pegawai,model_disepeng_pegawai,group_disepeng_kepala_balai,1,0,0,0

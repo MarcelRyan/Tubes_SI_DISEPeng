@@ -4,13 +4,13 @@
     <record id="disepeng_pengaduan_tree" model="ir.ui.view">
         <field name="name">disepeng.pengaduan.tree</field>
         <field name="model">disepeng.pengaduan</field>
-        <field name="priority" eval="1"/>
+        <field name="priority" eval="1" />
         <field name="arch" type="xml">
             <tree>
-                <field name="judul"/>
-                <field name="deskripsi"/>
-                <field name="alamatProduk"/>
-                <field name="status"/>
+                <field name="judul" />
+                <field name="deskripsi" />
+                <field name="alamatProduk" />
+                <field name="status" />
             </tree>
         </field>
     </record>
@@ -18,14 +18,14 @@
     <record id="disepeng_pegawai_tree" model="ir.ui.view">
         <field name="name">disepeng.pegawai.tree</field>
         <field name="model">disepeng.pegawai</field>
-        <field name="priority" eval="1"/>
+        <field name="priority" eval="1" />
         <field name="arch" type="xml">
             <tree>
-                <field name="namaLengkap"/>
-                <field name="nomorTelp"/>
-                <field name="email"/>
-                <field name="peran"/>
-                <field name="isAdmin"/>
+                <field name="namaLengkap" />
+                <field name="nomorTelp" />
+                <field name="email" />
+                <field name="peran" />
+                <field name="isAdmin" />
             </tree>
         </field>
     </record>

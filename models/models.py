@@ -27,3 +27,5 @@ class Pengaduan(models.Model):
     emailPelapor = fields.Char(string="Email Pelapor", required=True)
     nomorPelapor = fields.Char(string="Nomor Pelapor", required=True)
     
+    pegawai = fields.Many2many('res.users', String='Penanggung Jawab Kasus')
+    

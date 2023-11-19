@@ -8,8 +8,8 @@
     'version': '1.0',
     'depends': ['base'],
     'data': [
-        'security/ir.model.access.csv',
         'security/security.xml',
+        'security/ir.model.access.csv',
         'views/disepeng_menus.xml',
         'views/disepeng_forms.xml',
         'views/disepeng_trees.xml',
