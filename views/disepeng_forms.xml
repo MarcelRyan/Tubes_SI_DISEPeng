@@ -13,30 +13,15 @@
                         <field name="deskripsi"/>
                         <field name="alamatProduk"/>
                         <field name="status"/>
+                        <field name="namaPelapor"/>
+                        <field name="emailPelapor"/>
+                        <field name="nomorPelapor"/>
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
 
-    <record id="disepeng_pelapor_form" model="ir.ui.view">
-        <field name="name">disepeng.pelapor.form</field>
-        <field name="model">disepeng.pelapor</field>
-        <field name="priority" eval="1"/>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <field name="namaLengkap"/>
-                        <field name="nomorTelp"/>
-                        <field name="email"/>
-                        <field name="alamat"/>
-                        <field name="gender"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
 
     <record id="disepeng_pegawai_form" model="ir.ui.view">
         <field name="name">disepeng.pegawai.form</field>
