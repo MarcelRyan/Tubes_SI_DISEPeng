@@ -6,7 +6,7 @@
     'category': 'disepeng',
     'description': """Module Odoo untuk perusahaan BPOM Makassar""",
     'version': '1.0',
-    'depends': ['base'],
+    'depends': ['base', 'mail'],
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
