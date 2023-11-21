@@ -44,7 +44,7 @@
       <field name="model_id" ref="model_disepeng_pengaduan" />
       <field name="groups" eval="[(4, ref('group_disepeng_unit_tugas'))]" />
       <field name="domain_force">[
-        ('pegawai', '=', user.id)
+        ('pegawai.user', '=', user.id)
         ]</field>
     </record>
   </data>
