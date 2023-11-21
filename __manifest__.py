@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "DISEPeng Odoo",
+    'name': "disepeng",
     'sequence': -100,
     'author': "Kelompok muSIngin",
     'category': 'disepeng',

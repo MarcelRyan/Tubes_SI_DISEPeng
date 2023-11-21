@@ -50,7 +50,7 @@
                         <field name="nomorTelp" />
                         <field name="email" />
                         <field name="peran" />
-                        <field name="isAdmin" />
+                        <field name="user" />
                     </group>
                 </sheet>
             </form>

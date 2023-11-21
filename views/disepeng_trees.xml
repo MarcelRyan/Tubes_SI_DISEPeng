@@ -25,7 +25,6 @@
                 <field name="nomorTelp" />
                 <field name="email" />
                 <field name="peran" />
-                <field name="isAdmin" />
             </tree>
         </field>
     </record>

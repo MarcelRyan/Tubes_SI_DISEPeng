@@ -1,16 +1,21 @@
 from odoo import api, models, fields
+import logging
+
+_logger = logging.getLogger(__name__)
 
 class Pegawai(models.Model):
     _name = 'disepeng.pegawai'
-    _description = 'Data Pegawai BPOM Makassar'
+    _description = 'Data Pegawai BPOM Makassar' 
     
     namaLengkap = fields.Char(string='Nama Lengkap', required=True)
     nomorTelp = fields.Char(string='Nomor Telepon', required=True)
     email = fields.Char(string='Email', required=True)
-    peran = fields.Char(string='Peran', required=True)
-    isAdmin = fields.Boolean(string='Admin', required=True, default=False)
+    peran = fields.Selection(selection = [
+        ('0', "Administrator"), ('1', 'Kepala Balai'), ('2', 'Helpdesk'), ('3', 'Unit Tugas')
+    ], required=True)
     
     pengaduan_id = fields.Many2many('disepeng.pengaduan', string="Penanggung Jawab Kasus", required=True)
+    user = fields.Many2one('res.users', string="User", unique=True, required=True)
     
 
 class Pengaduan(models.Model):
@@ -29,7 +34,7 @@ class Pengaduan(models.Model):
     emailPelapor = fields.Char(string="Email Pelapor", required=True)
     nomorPelapor = fields.Char(string="Nomor Pelapor", required=True)
     
-    pegawai = fields.Many2many('res.users', String='Penanggung Jawab Kasus')
+    pegawai = fields.Many2many('disepeng.pegawai', String='Penanggung Jawab Kasus')
     
     @api.model
     def create(self, values):
@@ -43,7 +48,7 @@ class Pengaduan(models.Model):
         channel.message_subscribe(partner_ids=[administrator_partner.id])
 
         # Add the current user as a follower to the channel
-        channel.message_subscribe(partner_ids=[self.env.user.partner_id.id])
+        channel.message_subscribe(partner_ids=[self.env.user.partner_id.id])    
 
         # Post a message to the channel
         message_body = f"Discussion created for {record.judul}"
