@@ -37,10 +37,4 @@
         action="mail.action_discuss"
         sequence="3"/>
 
-    <menuitem
-        id="employees_menu"
-        name="Employees"
-        parent="disepeng_root_menu"
-        action="hr.open_view_employee_list_my"
-        sequence="4"/>
 </odoo>
